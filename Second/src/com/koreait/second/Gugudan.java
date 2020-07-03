@@ -33,10 +33,6 @@ public class Gugudan {
 		
 	}
 		
-
-	
-	
-	
 	/*public static void gugudan(int a, int b) { // 1번  구구단 찍기
 		
 		for(int i = a; i<=b; i++) {
@@ -78,6 +74,5 @@ public class Gugudan {
 		
 	}
 	
-//업로드테스트용
 }
 

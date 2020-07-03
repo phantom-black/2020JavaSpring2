@@ -77,7 +77,5 @@ public class Utils { //자바 파일명이랑 같은이름것만 public붙일수
 		return rArr;
 		
 	}
-	
-	
-// 깃허브연동테스트
+
 }
