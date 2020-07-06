@@ -14,16 +14,29 @@ public class CardDeck {
 	private void init() {
 		for(int i=0; i<Card.PATTERNS.length; i++) {
 			for(int z=1; z<=13; z++) {
-				arr.add(new Card(Card.PATTERNS[i], getDeno(z)));
+				
+				int point = z;
+				if(z > 10) {
+					point = 10;
+				}
+				
+				
+				arr.add(new Card(Card.PATTERNS[i], getDeno(z), point));
 				/*
 				String pattern = Card.PATTERNS[i];
 				String deno = getDeno(z);
-				Card c = new Card(pattern, deno);
+				int point = getPoint(z);
+				Card c = new Card(pattern, deno, point);
 				arr.add(c);
 				*/
 			}
 		}
 	}
+	/*
+	private int getPoint(int num) {
+		return num > 10 ? 10 : num;
+	}
+	*/
 	
 	private String getDeno(int num) {
 		switch(num) {
@@ -61,11 +74,16 @@ public class CardDeck {
 		}
 		return str;
 	}
-	
+	/*
 	public Card getCard() {
 		int rIdx = (int)(Math.random() * arr.size());
-		Card rc = arr.get(rIdx);
+		Card c = arr.get(rIdx);
 		arr.remove(rIdx);
-		return rc;
+		return c;
+	}
+	*/
+	public Card getCard() {
+		int rIdx = (int)(Math.random() * arr.size());
+		return arr.remove(rIdx);
 	}
 }
