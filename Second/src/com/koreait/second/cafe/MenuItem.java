@@ -20,6 +20,6 @@ public class MenuItem extends Object { // 클래스 = 멤버필드(속성) + 멤
 	
 	@Override
 	public String toString() {
-		return String.format("%s %,d원", name, price);
+		return String.format("%s\t\t%,d원", name, price);
 	}
 }

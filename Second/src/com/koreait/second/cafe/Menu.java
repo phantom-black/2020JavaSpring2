@@ -21,9 +21,6 @@ public class Menu {
 		arr.add(mi);
 	}
 	
-	public MenuItem menuGetter(int idx) {
-		return arr.get(idx);
-	}
 	
 	/*
 	public void printMenu() {
@@ -37,7 +34,7 @@ public class Menu {
 		System.out.println(" Menu ");
 		for(int i=0; i<arr.size(); i++) {
 			MenuItem m = arr.get(i);
-			System.out.printf("%d. %s %,d원\n", i+1, m.getName(), m.getPrice());
+			System.out.printf("%d. %s\t\t%,d원\n", i+1, m.getName(), m.getPrice());
 		}
 		return "";
 	}
